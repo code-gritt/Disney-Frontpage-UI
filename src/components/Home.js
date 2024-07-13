@@ -7,6 +7,7 @@ import { selectUserName } from "../features/user/userSlice";
 import db from "../firebase";
 import Viewers from "./Viewers";
 import Recommends from "./Recommends";
+import NewDisney from "./NewDisney";
 
 const Home = (props) => {
   const dispatch = useDispatch();
@@ -55,7 +56,7 @@ const Home = (props) => {
       <ImgSlider />
       <Viewers />
       <Recommends />
-      {/* <NewDisney /> */}
+      <NewDisney />
       {/*<Originals />
       <Trending /> */}
     </Container>

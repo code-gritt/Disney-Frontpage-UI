@@ -10,15 +10,42 @@ const NewDisney = (props) => {
     <Container>
       <h4>New to Disney+</h4>
       <Content>
-        {movies &&
-          movies.map((movie, key) => (
-            <Wrap key={key}>
-              {movie.id}
-              <Link to={`/detail/` + movie.id}>
-                <img src={movie.cardImg} alt={movie.title} />
-              </Link>
-            </Wrap>
-          ))}
+        <Wrap>
+          1
+          <Link to={`/detail/`}>
+            <img
+              src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/87F1DCF36049558159913ADFD18A800DE1121771540033EC3A7651B8FE154CEB/scale?width=400&aspectRatio=1.78&format=jpeg"
+              alt="title"
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          2
+          <Link to={`/detail/`}>
+            <img
+              src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B983FF22BA64B6E19E0D3267280819B26758CFB765E8BED1099D11E320612953/scale?width=400&aspectRatio=1.78&format=jpeg"
+              alt="title"
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          3
+          <Link to={`/detail/`}>
+            <img
+              src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/706C68FF1CEA5A9C2AE0608892C2DF79E4AC1F0DDB4BFF7FE6DAFC36DAFC0286/scale?width=400&aspectRatio=1.78&format=jpeg"
+              alt="title"
+            />
+          </Link>
+        </Wrap>
+        <Wrap>
+          4
+          <Link to={`/detail/`}>
+            <img
+              src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0ECD36DD35658155915685271440833C29ED87E788CF8AE111AA6BCA6B939C37/scale?width=400&aspectRatio=1.78&format=jpeg"
+              alt="title"
+            />
+          </Link>
+        </Wrap>
       </Content>
     </Container>
   );
